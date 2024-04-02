@@ -105,48 +105,4 @@
     justify-items: center;
     align-items: center;
     justify-content: center;
-
-
-    grid-template-areas:
-    "header header"
-    "nav img_card__container"
-    "footer footer"
-  }
-
-  .header { 
-    grid-template-columns: header;
- }
-  .nav {
-    grid-area: nav;
- }
-
- .img_card__container {
-    grid-area: img_card__container;
-  }
-
- .footer {
-    grid-area: footer;
- }
-  body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-
-  @media screen and (max-width: 1100px) {
-    body {
-        grid-template-rows: auto 1fr 1fr 1fr;
-
-        grid-template-areas: 
-          "header"
-         "nav"
-          "img_card__container"
-         "footer"
-    }
-  }
-
-  .img_card__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,100px);
-    grid-auto-rows: 350px;
   }
