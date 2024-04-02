@@ -101,7 +101,11 @@
   body {
     display: grid;
     grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: repeat(3, 100px);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
 
     grid-template-areas:
     "header header"
@@ -143,6 +147,6 @@
 
   .img_card__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px,100px);
     grid-auto-rows: 350px;
   }
