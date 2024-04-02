@@ -98,7 +98,7 @@
     }
   }
 
-  body {
+  main {
     display: grid;
     grid-template-columns: 100px 100px 100px 100px;
     grid-template-rows: repeat(3, 100px);
